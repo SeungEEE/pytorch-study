@@ -216,3 +216,49 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# PyTorch / machine learning artifacts
+# Keep source code and notebooks in Git; regenerate these large outputs locally.
+data/*
+!data/.gitkeep
+datasets/*
+!datasets/.gitkeep
+checkpoints/*
+!checkpoints/.gitkeep
+models/*
+!models/.gitkeep
+outputs/*
+!outputs/.gitkeep
+artifacts/*
+!artifacts/.gitkeep
+
+# Serialized models and exported graphs
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.safetensors
+
+# Experiment tracking and training logs
+runs/
+wandb/
+mlruns/
+lightning_logs/
+ray_results/
+
+# Native/CUDA build artifacts
+*.cu.o
+*.cubin
+*.fatbin
+*.ptx
+
+# Local environment files (keep a shareable template)
+.env.*
+!.env.example
+
+# Editors and operating systems
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+Desktop.ini
